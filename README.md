@@ -21,14 +21,13 @@ This repository contains a reproducible R workflow for analyzing sediment phosph
 - readr
 - ggpubr
 - ggpattern
-- here
 - grid
 
 ## How to reproduce the analysis
-1. Clone or download this repository.
+1. Download this repository.
 2. Open `final-project.Rproj` in RStudio.
 3. Make sure the data file is located at `data/Data file.csv`.
-4. Open `analysis/final_project.Rmd`.
+4. Open `final_project.Rmd`.
 5. Knit the file to PDF or run all code chunks.
 
 ## Outputs
@@ -38,8 +37,8 @@ The workflow produces:
 - a compiled report in PDF and/or Markdown format
 
 ## Reproducibility features
-- relative file paths using `here()`
-- self-checks using `stopifnot()`
+- input files are called using relative paths (for example, `read.csv("Data file.csv")`) rather than machine-specific absolute paths
+- basic data checks are included to ensure the dataset is correctly loaded and structured
 - reusable functions
 - loop-based plot generation
 - R Markdown documentation
