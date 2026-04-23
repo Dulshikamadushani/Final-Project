@@ -5,13 +5,12 @@ This repository contains a reproducible R workflow for analyzing sediment phosph
 
 ## Repository structure
 - `data/` : raw input data
-- `analysis/` : R Markdown analysis file
+- `analysis/` : R Markdown file
 - `output/figures/` : exported figures
 - `output/tables/` : exported summary tables
 - `final-project.Rproj` : R project file
 
 ## Software used
-- R
 - RStudio
 
 ## Required packages
@@ -26,15 +25,15 @@ This repository contains a reproducible R workflow for analyzing sediment phosph
 ## How to reproduce the analysis
 1. Download this repository.
 2. Open `final-project.Rproj` in RStudio.
-3. Make sure the data file is located at `data/Data file.csv`.
+3. Make sure the data file is located at `Final project/Data file.csv`.
 4. Open `final_project.Rmd`.
 5. Knit the file to PDF or run all code chunks.
 
 ## Outputs
 The workflow produces:
-- manuscript-ready figures in `output/figures/`
-- summary tables in `output/tables/`
-- a compiled report in PDF and/or Markdown format
+- manuscript-ready figures
+- summary tables
+- a compiled report in PDF and Markdown format
 
 ## Reproducibility features
 - input files are called using relative paths (for example, `read.csv("Data file.csv")`) rather than machine-specific absolute paths
