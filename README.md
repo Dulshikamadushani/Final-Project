@@ -13,7 +13,8 @@ Final-Project/
 └── README.md
 
 ## Software used
-- RStudio
+- R (version 4.0 or higher recommended)
+- RStudio (recommended for ease of use)
 
 ## Required packages
 - ggplot2
@@ -26,21 +27,23 @@ Final-Project/
 
 ## How to reproduce the analysis
 1. Download this repository.
-2. Open `Final-project.Rproj` in RStudio.
-3. Make sure the data file is located at `Final-project/Data file.csv`.
-4. Open `final_project new.Rmd`.
-5. Knit the file to PDF or run all code chunks.
+2. Open RStudio.
+3. Set the working directory to the repository folder (where Data file.csv is located).
+4. Navigate to the Results/ folder.
+5. Open the file:
+   Final project new.Rmd
+6. Click Knit (to PDF or HTML), or run all code chunks sequentially.
 
-## Outputs
-The workflow produces:
-- manuscript-ready figures
-- summary tables
-- a compiled report in PDF and Markdown format
+## Running the R Markdown file will generate:
+- Multi-panel figures of sediment properties
+- Phosphorus fraction distribution plots
+- Percentage composition plots
+- Linear model results
+- A compiled report in PDF and Markdown formats
 
 ## Reproducibility features
-- input files are called using relative paths (for example, `read.csv("Data file.csv")`) rather than machine-specific absolute paths
-- basic data checks are included to ensure the dataset is correctly loaded and structured
-- reusable functions
-- loop-based plot generation
-- R Markdown documentation
-- project-based file structure
+- Use of relative file paths (e.g., "Data file.csv")
+- R Markdown for transparent and automated reporting
+- Reusable functions for repeated analytical steps
+- Loop-based generation of multiple figures
+- Structured workflow from raw data to final outputs
