@@ -4,11 +4,13 @@
 This repository contains a reproducible R workflow for analyzing sediment phosphorus fractions and selected sediment physicochemical properties with depth. The project includes data cleaning, visualization, summary table generation, and a simple linear model.
 
 ## Repository structure
-- `data/` : raw input data
-- `analysis/` : R Markdown file
-- `output/figures/` : exported figures
-- `output/tables/` : exported summary tables
-- `final-project.Rproj` : R project file
+Final-Project/
+├── Results/
+│   ├── Final project new.Rmd
+│   ├── Final-project-new.md
+│   └── Final-project-new.pdf
+├── Data file.csv
+└── README.md
 
 ## Software used
 - RStudio
@@ -24,9 +26,9 @@ This repository contains a reproducible R workflow for analyzing sediment phosph
 
 ## How to reproduce the analysis
 1. Download this repository.
-2. Open `final-project.Rproj` in RStudio.
-3. Make sure the data file is located at `Final project/Data file.csv`.
-4. Open `final_project.Rmd`.
+2. Open `Final-project.Rproj` in RStudio.
+3. Make sure the data file is located at `Final-project/Data file.csv`.
+4. Open `final_project new.Rmd`.
 5. Knit the file to PDF or run all code chunks.
 
 ## Outputs
